@@ -11,7 +11,8 @@ def replace_text_in_file(file_path, replacements):
 replacements = {
     'wordpress': 'dilacms',
     'dilacode': 'datacode',
-    'wp-': 'dc-'
+    'wp-': 'dc-',
+    'elementor': 'dilamentor'
 }
 
 for root, dirs, files in os.walk('.'):
