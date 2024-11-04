@@ -21,6 +21,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./ # Adjust this if your website files are in a different directory
-        remote-dir: ./ 
         protocol: ftp
         method: sync
