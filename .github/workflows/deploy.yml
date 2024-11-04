@@ -22,4 +22,4 @@ jobs:
         port: 21
         local-dir: ./ # Adjust this if your website files are in a different directory
         protocol: ftp
-        method: sync
+        # method: sync
