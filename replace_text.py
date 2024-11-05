@@ -22,7 +22,7 @@ replacements = {
     'dilacode': 'datacode',
     'wp-': 'dc-',
     'elementor': 'dilamentor',
-    'wp-content': 'content',
+    'wp-content': 'content'
 }
 
 # Replace text in files
