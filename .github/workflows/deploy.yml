@@ -18,6 +18,7 @@ jobs:
 
     - name: Deploy to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      continue-on-error: true
       with:
         server: ftp.datacode.online
         username: ${{ secrets.FTP_USERNAME }}
@@ -25,4 +26,4 @@ jobs:
         port: 21
         local-dir: ./ # Adjust this if your website files are in a different directory
         protocol: ftp
-        # method: sync
+        method: sync
