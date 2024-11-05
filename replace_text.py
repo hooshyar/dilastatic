@@ -21,7 +21,8 @@ replacements = {
     'wordpress': 'dilacms',
     'dilacode': 'datacode',
     'wp-': 'dc-',
-    'elementor': 'dilamentor'
+    'elementor': 'dilamentor',
+    'wp-content': 'dc-content',
 }
 
 # Replace text in files
