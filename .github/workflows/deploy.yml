@@ -26,5 +26,5 @@ jobs:
         local-dir: ./ 
         protocol: ftp
         method: sync
-        dangerous-clean-slate: true
+        # dangerous-clean-slate: true
         server-dir: /
