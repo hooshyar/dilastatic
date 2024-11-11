@@ -33,14 +33,20 @@ def rename_item(path, replacements):
 def process_directory(root_dir, replacements):
     # Walk the directory tree and replace text in files
     for dirpath, dirnames, filenames in os.walk(root_dir):
+        # Skip the wp-content directory if it's in the root
+        if 'wp-content' in dirnames and dirpath == root_dir:
+            dirnames.remove('wp-content')
+        
         # Replace text in files
         for filename in filenames:
             file_path = os.path.join(dirpath, filename)
             replace_text_in_file(file_path, replacements)
+        
         # Rename files
         for filename in filenames:
             old_file_path = os.path.join(dirpath, filename)
             new_file_path = rename_item(old_file_path, replacements)
+        
         # Rename directories
         for dirname in dirnames:
             old_dir_path = os.path.join(dirpath, dirname)

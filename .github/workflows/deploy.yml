@@ -13,8 +13,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    # - name: Run Python script for text replacements
-    #   run: python3 replace_text.py
+    - name: Run Python script for text replacements
+      run: python3 replace_text.py
     # commented out for the stable version
 
     - name: Deploy to FTP server
