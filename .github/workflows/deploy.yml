@@ -15,6 +15,8 @@ jobs:
 
     # - name: Run Python script for text replacements
     #   run: python3 replace_text.py
+    # commented out for the stable version
+
     - name: Deploy to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       continue-on-error: true
